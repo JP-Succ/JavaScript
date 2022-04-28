@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+        <form class="contact-form" action="">
+        <legend>Formulario Contacto</legend>
+            <input type="text" name="name" placeholder="Escribe un nombre" 
+            title="Nombre solo acepta letras y espacios en blancos" id=""
+            required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+
+            <input type="email" placeholder="Email" name="email" title="Email incorrecto" required pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+            
+            <select name="tipoSocial">
+                <option value="">Sociedad Anonima</option>
+                <option value="">Sociedad Economia Mixta</option>
+            </select>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    
+</body>
+<script>
+    var hola = "hola mundo"
+    console.log(hola)
+    {
+        let hello = "hello world"
+        console.log(hello)
+    }
+    
+    /* destructuracion */
+    let persona = {
+        nombre: "Juan",
+        apellido: "Succurro",
+        edad: 35
+    }
+    let {nombre, apellido, edad} = persona
+    console.log(nombre, apellido, edad)
+    
+</script>
+<!-- <script src="validaciones.js"></script> -->
+</html>
